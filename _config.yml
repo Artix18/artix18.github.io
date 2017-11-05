@@ -1,2 +1,6 @@
 name: Jules Pondard
 markdown: kramdown
+pages_list:       
+  About: '/about'
+  Archive: '/archive'
+  Feed: '/atom.xml'
