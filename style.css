@@ -1,0 +1,303 @@
+/* style.css */
+
+html, body {
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  margin: 0px;
+  background: rgb(240, 240, 240);
+  color: rgb(20, 20, 20);
+  font-family: 'Poor Story', cursive;
+	font-size: 18px;
+  font-weight: lighter;
+}
+h1, h2, h3 {
+  font-family: Courier;
+  font-weight: bold;
+}
+h1 {
+	font-size: 40px;
+}
+h2 {
+  font-size: 24px;
+  color: #6A71E1;
+}
+a {
+  color: blue;
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+  outline: none;
+}
+a:focus {
+	outline: none;
+}
+
+.navbar .search-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 0px;
+    font-size: 17px;
+}
+
+.navbar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 6px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}
+
+#dropdown-menu2 {
+	background: lightgray;
+}
+
+.dropdown-menu a {
+	background: lightgray;
+}
+
+.dropdown-menu a:hover {
+	background: gray;
+}
+
+.banner{
+  text-align: center;
+  color: white;
+	padding: 150px 0px;
+  background-image: linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%), url("images/testbanner3.jpeg"); /*6 pas mal*/ /*url("https://picsum.photos/1000/600?random");*/
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner h1 {
+  font-size: 50px;
+}
+.banner p {
+  opacity: 0.8;
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+
+.btn-blue {
+  color: white;
+  background: #6772e5;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11);
+  border-radius: 4px;
+  padding: 15px 20px;
+}
+.btn-blue:hover {
+  background: #7795f8;
+  color: white;
+}
+
+.card-white {
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11);
+  padding: 16px;
+  margin: 16px 0px;
+}
+.card-white img {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: black;
+  padding: 15px;
+  color: white;
+}
+.footer a {
+  color: white;
+  font-size: 32px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+.list-inline li {
+  display: inline;
+  padding: 0px 8px;
+}
+
+.box {
+background: lightgrey;                         /* White background */
+padding: 30px;                             /* Internal space */
+margin: 10px;
+border-radius: 4px;                        /* Small radius */
+box-shadow: 0 10px 30px rgba(0,0,0,.1);    /* Light shadow */
+
+}
+
+
+.row {
+    margin: 0px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px; /*todo : fixer bug qui fait que > 0 fait scroll horizontal, 8px */;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 30%;
+    margin: auto auto;
+    display: block;
+    /*display: none; /* Hide columns by default */
+}
+
+.column h4 {
+	margin-top: 10px;
+}
+
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+.blog {
+	background-color: skyblue; /*lightgrey;*/
+	position: relative;
+  	/*max-width: 1200px;*/
+    margin: 0 auto;
+    background-image: url("images/testbg5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /*cover;*/
+    padding-bottom: 25px;
+}
+
+.blog-title {
+	text-align: center;
+	padding-top: 10px;
+	color: white;
+}
+
+/*.blog::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}*/
+
+.article-summary-title {
+	font-size: 24px;
+	font-weight: bold;
+	font-family: helvetica;
+	margin-bottom: 15px;
+}
+
+.article-summary-image {
+	float: left;
+	margin-right: 70px;
+
+
+}
+
+.article-summary {
+	/*padding: 20px 30px;
+	position: relative;
+	*/
+
+	border: 1px solid gray;
+	border-radius: 35px;
+
+	padding: 0px 40px;
+	padding-top: 20px;
+  position: relative;
+  background-color: whitesmoke;
+  width: 1500px;
+  height: 330px ;
+  margin: auto;
+  opacity: 0.8;
+
+  margin-top: 25px;
+}
+
+.article-summary-content-full {
+}
+
+.article-summary-content {
+	/*height: 140px;*/
+}
+
+.article-summary-footer {
+	margin-top: 25px;
+}
+
+.article-summary-button {
+	padding: 10px 10px;
+	border: 2px solid blue;
+	border-radius: 35px;
+}
+
+.article-summary-button:hover {
+	background-color: gray;
+	text-decoration: none;
+	color: white;
+}
+
+.left {
+	left: 0;
+}
+
+.right {
+	left: 50%;
+}
+
+.projets {
+	background-color: lightgray;
+	background-image: url("images/testbanner5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.projets-title {
+	text-align: center;
+	padding-top: 30px;
+	margin-bottom: 10px;
+	color: black;
+}
+
+.projets-title h2 {
+	padding: 0px;
+	margin: 0px;
+}
+
