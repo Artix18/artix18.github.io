@@ -11,6 +11,7 @@
 <tr>
 <td><xsl:value-of select="biere/nom"/></td> <td><xsl:value-of select="biere/prix"/></td> </tr>
 </table>
+  <xsl:value-of select="system-property('xsl:version')" /><br />
 </body>
 </html>
 </xsl:template>
